@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lexend Mega';
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+  
+nav{
+    background: rgb(156, 28, 28);
+    height: 80px;
+    width: 100%;
+}
+  
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+p{
+    text-align:center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.contents{
+    max-width: 900px;
+    margin:0 auto;
+    background:rgb(156, 28, 28);
+    width:600%;
+    height:1450px;
+    padding-top: 40px;
+    padding-left:20px;
+    border-radius:5%;
+    border-style:solid;
+    color:blanchedalmond;
+    border-color: black;
+    
+}
+h1{
+    padding-left: 37%;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 952px){
+    .logo{
+      float:left;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+    nav{
+      overflow: hidden;
+      position: absolute;
+      z-index:1;
+    }
+    .navigation{
+      bottom: 40px;
+    }
+    .contentss{
+        padding-top: 110px;
+        height:1000px;
+    }
+  }
+  @media screen and (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #0e0808;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: rgb(224, 20, 20);
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+@media screen and (max-width:767px){
+.cv textarea {
+    height:300px;
+    width:250px;
+}
+select{
+font-size: 20px;
+}
+input{
+    font-size: 20px;
+}
+.contentss{
+    max-width: 1000px;
+    height: 1100px;
+}
+}
+
+@media screen and (max-width:322px){
+    .cv textarea {
+        height:300px;
+        width:250px;
+    }
+    select{
+    font-size: 20px;
+    }
+    input{
+        font-size: 20px;
+    }
+    .contentss{
+        width: 300px;
+        height: 1050px;
+    }
+    }
+    
+
